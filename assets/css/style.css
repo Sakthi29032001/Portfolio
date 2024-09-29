@@ -1347,3 +1347,119 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero-social-list { left: -80px; }
+
+  .scroll-down { right: -80px; }
+
+
+
+
+  /**
+   * ABOUT
+   */
+
+  .about-banner { max-width: 450px; }
+
+}
+
+/* Ensure hero image and text scale properly on smaller screens */
+@media (max-width: 768px) {
+  .hero img {
+    max-width: 100%;  /* Make sure the image is responsive */
+    height: auto;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;  /* Smaller font for mobile */
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;  /* Ensure hero content is centered */
+  }
+
+  .hero .btn-primary {
+    padding: 10px 20px;  /* Adjust button padding on mobile */
+  }
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+  .navbar-list {
+    display: flex;
+    flex-direction: column;  /* Stack the navbar items vertically */
+  }
+  
+  .nav-toggle-btn {
+    display: block;  /* Ensure the hamburger menu displays */
+  }
+
+  .navbar {
+    display: none;  /* Hide the navbar by default */
+  }
+
+  .navbar.active {
+    display: block;  /* Show navbar when toggled */
+  }
+}
+
+/* Make skills and projects responsive */
+@media (max-width: 768px) {
+  .skills-box {
+    display: block;  /* Stack the skills vertically on mobile */
+  }
+
+  .project-list {
+    display: block;  /* Stack the projects vertically */
+  }
+
+  .project-card {
+    width: 100%;  /* Ensure the project cards take up full width */
+  }
+}
+
+/* Ensure contact form is responsive */
+@media (max-width: 550px) {
+  .contact-form {
+    width: 100%;  /* Ensure the form takes up full width on mobile */
+  }
+
+  .input-field {
+    width: 100%;  /* Make sure input fields are 100% width */
+  }
+}
+
+/* Ensure projects and layout scale properly */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid */
+  gap: 20px;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;  /* Images should not overflow their containers */
+  height: auto;     /* Maintain aspect ratio */
+}
+
+/* General mobile adjustments for spacing */
+@media (max-width: 550px) {
+  .container {
+    padding: 10px;  /* Add padding to the container on small screens */
+  }
+
+  .section-content {
+    padding-left: 0;  /* Remove extra padding on smaller devices */
+  }
+
+  .btn {
+    width: 100%;  /* Make buttons full-width on mobile */
+  }
+}
